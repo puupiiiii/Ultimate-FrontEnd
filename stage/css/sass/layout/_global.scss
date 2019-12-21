@@ -12,5 +12,8 @@ body {
         transition: all .3s ease-in-out;
         will-change: width;
         float: right;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }
