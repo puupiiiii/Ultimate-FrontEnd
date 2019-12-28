@@ -1,1 +1,20 @@
-.sidebar SIDEBAR
+.sidebar 
+    .logo-area.text-center Elzero
+    ul.links-area.list-unstyled
+        li: a(href="#") Homepage
+        li
+            a.toggleSubmenu(href="#")
+                | Forms
+                i.fa.fa-angle-down.submenu
+            ul.child-links.list-unstyled
+                li: a(href="#") Input
+                li: a(href="#") Textarea
+                li: a(href="#") Checkbox
+                li: a(href="#") Radio
+        li
+            a.toggleSubmenu(href="#") 
+                | Misc
+                i.fa.fa-angle-down.submenu
+            ul.child-links.list-unstyled
+                li: a(href="#") Loading
+                li: a(href="#") Breadcrumbs
