@@ -1,17 +1,18 @@
 .header {
     background-color: #fff;
     padding: 20px;
+    .header-icon {
+        cursor: pointer;
+        color: #4f4d4d;
+        padding: 10px;
+        margin-left: 10px;
+    }
     .toggle-sidebar {
         cursor: pointer;
     }
     .notifications-container{
         display: inline-block;
         margin-left: 20px;
-        .toggle-notifications {
-            cursor: pointer;
-            color: #4f4d4d;
-            padding: 10px;
-        }
         .dropdown-menu {
             min-width: 600px;
             border: none;
@@ -30,36 +31,58 @@
                 background-color: #333;
                 color: #fff;
                 padding: 15px;
+                font-weight: bold;
                 span {
                     float: right;
                 }
             }
             .noti-content {
                 padding: 20px;
+                h5 {
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
                 ul {
                     margin: 0;
                     li {
-                        padding: 10px;
+                        padding: 5px;
+                        font-weight: bold;
+                        color: rgb(28, 9, 46);
+                        border-bottom: ipx solid rgba(28, 9, 46, 0.507);
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        &:last-child {
+                            padding-bottom: 0;
+                            margin-bottom: 0;
+                            border-bottom: none;
+                        }
                         i {
-                            padding: 10px;
-                            border-radius: 50%;
-                            width: 40px;
-                            height: 40px;
+                            width: 30px;
+                            height: 27px;
                             margin-right: 10px;
                             position: relative;
-                            top: -1px;
-                            cursor: pointer;
+                            top: -4px;
+                            font-size: 17px;
+                            color: #fff;
+                            line-height: 25px;
+                            text-align: center;
+                            &.fa-envelope-o {
+                                background-color: rgb(9, 85, 2);
+                            }
+                            &.fa-money {
+                                background-color: #ff9800;
+                            }
+                            &.fa-thumbs-o-up {
+                                background-color: rgb(27, 110, 117);
+                            }
                         }
-                    }
-                    li:last-child {
-                        padding-bottom: 0;
                     }
                 }
             }
             .noti-foot {
                 a {
                     display: block;
-                    padding: 10px;
+                    padding: 12px;
                     border-top: 1px solid #eee;
                 }
             }
