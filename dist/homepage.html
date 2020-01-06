@@ -23,8 +23,7 @@
               <li><a href="#">Radio</a></li>
             </ul>
           </li>
-          <li><a class="toggleSubmenu" href="#">
-               Misc<i class="fa fa-angle-down submenu"></i></a>
+          <li><a class="toggleSubmenu" href="#">Misc<i class="fa fa-angle-down submenu"></i></a>
             <ul class="child-links list-unstyled">
               <li><a href="#">Loading</a></li>
               <li><a href="#">Breadcrumbs</a></li>
@@ -33,7 +32,23 @@
         </ul>
       </div>
       <div class="content-area">
-        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i></div>
+        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+          <div class="dropdown notifications-container"><i class="fa fa-bell fa-lg toggle-notifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">Notifications<span>50</span></div>
+              <div class="noti-content">Content
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-envelope-o fa-lg"></i>You Got Email From XXX</li>
+                  <li><i class="fa fa-money fa-lg"></i>You Got Money From YYY</li>
+                  <li><i class="fa fa-thumbs-o-up fa-lg"></i>You Got Like From SSS</li>
+                  <li><i class="fa fa-envelope-o fa-lg"></i>You Got Email From ZZZ</li>
+                  <li><i class="fa fa-money fa-lg"></i>You Got Money From VVV</li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a herf="#">View All Notifications</a></div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">

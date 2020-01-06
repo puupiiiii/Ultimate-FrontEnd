@@ -1,2 +1,26 @@
 .header
     i.fa.fa-exchange.fa-lg.toggle-sidebar
+    .dropdown.notifications-container
+        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications')
+            .noti-head
+                | Notifications
+                span 50
+            .noti-content Content
+                ul.list-unstyled
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | You Got Email From XXX
+                    li
+                        i.fa.fa-money.fa-lg
+                        | You Got Money From YYY
+                    li
+                        i.fa.fa-thumbs-o-up.fa-lg
+                        | You Got Like From SSS
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | You Got Email From ZZZ
+                    li
+                        i.fa.fa-money.fa-lg
+                        | You Got Money From VVV
+            .noti-foot.text-center: a(herf="#") View All Notifications
