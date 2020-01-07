@@ -53,7 +53,12 @@ $(function () {
         }
     }
 
-
+    // show/hide settings box toggle settings
+    $('.toggle-settings').on('click', function () {
+        $(this).find('i').toggleClass('fa-spin');
+        $('.settings-box').toggleClass('hide-settings');
+    });
+    
 
 
 
