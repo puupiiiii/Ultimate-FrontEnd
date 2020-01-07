@@ -14,7 +14,7 @@
         display: inline-block;
         margin-left: 20px;
         .dropdown-menu {
-            min-width: 600px;
+            min-width: 500px;
             border: none;
             padding: 0;
             top: 5px !important;
@@ -84,6 +84,78 @@
                     display: block;
                     padding: 12px;
                     border-top: 1px solid #eee;
+                }
+            }
+        }
+    }
+    .usermenu-container {
+        float: right;
+        .username {
+            cursor: pointer;
+            .avatar {
+                width: 40px;
+                height: 40px;
+            }
+            .user {
+                font-weight: bold;
+                color: #777;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+        .dropdown-menu {
+            min-width: 500px;
+            border: none;
+            padding: 20px;
+            top: 5px !important;
+            border: 1px solid #ddd;
+            &:before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                right: 70px;
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent transparent #ddd;
+            }
+            .user-info {
+                h4 {
+                    font-weight: bold;
+                }
+                p {
+                    color: #888;
+                }
+            }
+            .activities-list {
+                li {
+                    padding: 5px;
+                    font-size: 15px;
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            .usermenu-links {
+                .link-box {
+                    border: 1px solid #f3f3f3;
+                    padding: 10px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    i {
+                        margin-right: 5px;
+                        &.setting {
+                            color: #2980b9;
+                        }
+                        &.profile {
+                            color: #16a085;
+                        }
+                        &.logout {
+                            color: #c0392b;
+                        }
+                    }
                 }
             }
         }
