@@ -61,6 +61,17 @@ $(function () {
     });
     
 
+    //switch color theme
+    var themeClasses = [];
+    $('.color-options li').each(function () {
+        themeClasses.push($(this).data('theme'));
+    });
 
+    $('.color-options li').on('click', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('body').removeClass(themeClasses.join(" "));
+        // $('body').removeClass([...themeClasses]); //same result
+        $('body').addClass($(this).data('theme'));
+    });
 
 });
