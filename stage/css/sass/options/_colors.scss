@@ -1,15 +1,24 @@
 $themes : (
     green-theme: (color: #27ae60),
     blue-theme: (color: #2980b9),
-    red-theme: (color: #c0392b),
+    red-theme: (color: #f00),
     orange-theme: (color: #d35400),
-    purple-theme: (color: #8e44ad)
+    purple-theme: (color: #57206e),
+    gray-theme: (color: #878d8d),
+    maroon-theme: (color: #c0392b)
 );
 
 @each $theme, $map in $themes {
     .#{$theme} {
+        $color: map-get($map , color);
         .page .page-head .page-title {
-            color: map-get($map , color);
+            color: $color;
+        }
+        .header .toggle-sidebar:hover {
+            color: $color;
+        }
+        .header .usermenu-container .dropdown-menu .user-info h4 {
+            color: $color;
         }
     }
 } 

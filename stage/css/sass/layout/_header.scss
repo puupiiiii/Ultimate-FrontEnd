@@ -9,6 +9,9 @@
     }
     .toggle-sidebar {
         cursor: pointer;
+        &:hover {
+            color:#27ae60;
+        }
     }
     .notifications-container{
         display: inline-block;
@@ -121,6 +124,7 @@
             .user-info {
                 h4 {
                     font-weight: bold;
+                    color: #27ae60;
                 }
                 p {
                     color: #888;
