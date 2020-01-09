@@ -6,10 +6,15 @@
         color: #4f4d4d;
         padding: 10px;
         margin-left: 10px;
+        &:hover,
+        &.active {
+            color: #27ae60;
+        }
     }
     .toggle-sidebar {
         cursor: pointer;
-        &:hover {
+        &:hover,
+        &.active {
             color:#27ae60;
         }
     }

@@ -14,7 +14,12 @@ $themes : (
         .page .page-head .page-title {
             color: $color;
         }
-        .header .toggle-sidebar:hover {
+        .header .toggle-sidebar:hover ,
+        .header .toggle-sidebar.active {
+            color: $color;
+        }
+        .header .header-icon:hover,
+        .header .header-icon.active {
             color: $color;
         }
         .header .usermenu-container .dropdown-menu .user-info h4 {

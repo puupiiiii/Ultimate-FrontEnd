@@ -1,10 +1,5 @@
 $(function () {
     'use strict';
-    
-    //toggle sidebar
-    $('.toggle-sidebar').on('click', function () {
-        $('.content-area, .sidebar').toggleClass('no-sidebar');
-    });
 
     //toggle submenu /sidebar
     $('.toggleSubmenu').on('click', function () {
@@ -13,9 +8,15 @@ $(function () {
         
     });
 
+    //toggle sidebar
+    $('.toggle-sidebar').on('click', function () {
+        $(this).toggleClass('active');
+        $('.content-area, .sidebar').toggleClass('no-sidebar');
+    });
+
     //toggle fullscreen
     $('.toggle-fullscreen').on('click',function (){
-        $(this).toggleClass('full-screen');
+        $(this).toggleClass('full-screen active');
         if($(this).hasClass('full-screen')) { // the page is fullscreen
             openFullscreen(); 
         } else { // the page isn't fullscreen
@@ -74,4 +75,13 @@ $(function () {
         $('body').addClass($(this).data('theme'));
     });
 
+    // switch font options
+    var fontClasses =[];
+    $('.font-options select option').each(function () {
+        fontClasses.push($(this).val());
+    });
+
+    $('.font-options select').on('change', function () {
+        $('body').removeClass(fontClasses.join(" ")).addClass($(this).find("option:selected").val());
+    });
 });
